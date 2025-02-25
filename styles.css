@@ -1,2 +1,12 @@
+.holder {
+    display: grid;
+    grid-template-columns: 100px 100px; /* Explicitly set to 100px */
+    grid-template-rows: 100px 100px; /* Explicitly set to 100px */
+    width: 200px;
+    height: 200px;
+    gap: 0; /* Ensure no extra spacing affects dimensions */
+    background-color: lightgray;
+}
+
 
 /* Your CSS Code here. */
