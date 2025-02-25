@@ -1,21 +1,44 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2x2 Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        .holder {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            width: 200px;
+            height: 200px;
+            gap: 5px; /* Optional: Adds spacing between grid items */
+            background-color: lightgray;
+        }
+
+        .item {
+            background-color: steelblue;
+            color: white;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid white;
+        }
+    </style>
+</head>
 <body>
     <div class="holder">
-    	<div class="item item-1">1</div>
-    	<div class="item item-2">2</div>
-    	<div class="item item-3">3</div>
-    	<div class="item item-4">4</div>
-   </div>
-   <script type="text/javascript" src="./script.js">
-</script>
-
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
 </body>
-
 </html>
+
